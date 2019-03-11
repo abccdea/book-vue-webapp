@@ -20,11 +20,11 @@ function write (data, callback) {
 }
 
 http.createServer((req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
-  res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
-  res.setHeader('X-Powered-By', ' 3.2.1')
-  if (req.method === 'OPTIONS') return res.end()
+  // res.setHeader('Access-Control-Allow-Origin', '*')
+  // res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
+  // res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+  // res.setHeader('X-Powered-By', ' 3.2.1')
+  // if (req.method === 'OPTIONS') return res.end()
 
   let {pathname, query} = url.parse(req.url, true)
 
@@ -51,9 +51,7 @@ http.createServer((req, res) => {
     read(function (books) {
       let hot = books.reverse().slice(0, 6)
       res.setHeader('Content-Type', 'application/json;charset=utf8')
-      setTimeout(() => {
-        res.end(JSON.stringify(hot))
-      }, 3000)
+      res.end(JSON.stringify(hot))
     })
     return
   }
@@ -124,5 +122,19 @@ http.createServer((req, res) => {
         })
         break
     }
+    return
   }
+
+  fs.stat('.' + pathname, function (err, stats) {
+    if (err) {
+      fs.createReadStream('index.html').pipe(res)
+    } else {
+      if (stats.isDirectory()) {
+        let p = require('path').join('.' + pathname, './index.html')
+        fs.createReadStream(p).pipe(res)
+      } else {
+        fs.createReadStream('.' + pathname).pipe(res)
+      }
+    }
+  })
 }).listen(3000)
