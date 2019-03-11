@@ -18,7 +18,7 @@
   }
 
   .spinner > div {
-    background-color: #67CF22;
+    background-color: #4867AA;
     height: 100%;
     width: 6px;
     display: inline-block;

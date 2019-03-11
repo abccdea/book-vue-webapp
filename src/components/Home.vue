@@ -55,12 +55,12 @@ export default {
 
 <style scoped lang="less">
   h3 {
-    color: #999;
+    color: #000;
     padding: 5px 0;
   }
 
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -68,12 +68,16 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10px;
+    justify-content: space-between;
+    border-top: 1px solid #f1f1f1;
     li {
       width: 50%;
       text-align: center;
-      margin: 5px 0;
+      /*margin: 5px 0;*/
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f1f1;
       img {
-        width: 100%
+        width: 90%
       }
     }
   }

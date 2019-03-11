@@ -28,11 +28,12 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    background: #afd9ee;
+    background: #4867AA;
     height: 40px;
     text-align: center;
     line-height: 40px;
     font-weight: bold;
+    color: #fff;
     i {
       position: absolute;
       left: 10px;

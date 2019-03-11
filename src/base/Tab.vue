@@ -20,23 +20,25 @@
 </template>
 
 <style scoped lang="less">
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  border-top: 1px solid #ccc;
-  a {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+    border-top: 1px solid #ccc;
+    a {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+    }
+    a.router-link-active {
+      color: #fff;
+      background: #4867AA;
+    }
   }
-  a.router-link-active {
-    color: slategrey;
-  }
-}
 </style>

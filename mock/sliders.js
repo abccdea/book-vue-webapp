@@ -1,5 +1,6 @@
 module.exports = [
-  'http://gw.alicdn.com/imgextra/i3/84/O1CN01X4qND01CUVm2ehFmx_!!84-0-lubanu.jpg',
-  'http://gw.alicdn.com/imgextra/i1/24/O1CN01XsuWF41C320aX5re9_!!24-0-luban.jpg',
-  'http://img.alicdn.com/imgextra/i3/195/O1CN01kFKwqS1DJLjjUfTxD_!!195-0-luban.jpg'
+  'https://images-cn-4.ssl-images-amazon.com/images/G/28/hongfel/JAVA1500-300B._V507801738_.jpg',
+  'https://images-cn-4.ssl-images-amazon.com/images/G/28/sshuangs/1/shenduxuexi._CB473302737_.jpg',
+  'https://images-cn-4.ssl-images-amazon.com/images/G/28/kindle/design/2019/190218_ATF1500x300_moonshine_kindle._CB456708368_.jpg',
+  'https://images-cn-4.ssl-images-amazon.com/images/G/28/SL/baihul/WD19/1161278-1500300-0308-WD-PC._CB453794230_.jpg'
 ]

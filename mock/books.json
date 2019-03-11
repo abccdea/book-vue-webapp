@@ -1,44 +1,44 @@
 [
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn.ssl-images-amazon.com/images/I/41sxR8D86bL.jpg",
+    "bookName": "代码整洁之道",
+    "bookInfo": "软件质量，不但依赖于架构及项目管理，而且与代码质量紧密相关",
+    "bookPrice": 48.00,
     "bookId": 1
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B075SWBDZ4/resources/1252389323",
+    "bookName": "Angular权威教程",
+    "bookInfo": "本书堪称Angular领域的里程碑式著作，涵盖了关于Angular的几乎所有内容。",
+    "bookPrice": 86.10,
     "bookId": 2
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/91ojtJLqQ5L.jpg",
+    "bookName": "智能时代",
+    "bookInfo": "大数据与智能革命重新定义未来(大数据、智能革命、人工智能、机械智能领域作品)",
+    "bookPrice": 50.30,
     "bookId": 3
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/716iBFxYvbL.jpg",
+    "bookName": "未来简史",
+    "bookInfo": "人类迎来第二次认知革命,人工智能和算法将战胜人类,99%的人将沦为无用阶层!",
+    "bookPrice": 46.50,
     "bookId": 4
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07MTCTPQY/resources/1943007428",
+    "bookName": "算法",
+    "bookInfo": "全面讲述算法和数据结构的必备知识",
+    "bookPrice": 21.78,
     "bookId": 5
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07KW277RR/resources/1276256415",
+    "bookName": "Node.js实战",
+    "bookInfo": "本书是Node.js的实战教程，涵盖了为开发产品级Node应用程序所需要的一切特性、技巧以及相关理念",
+    "bookPrice": 17.99,
     "bookId": 6
   },
   {
@@ -49,52 +49,52 @@
     "bookId": 7
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 100,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
+    "bookName": "Vue.js实战",
+    "bookInfo": "Vue.js作者尤雨溪作推荐序",
+    "bookPrice": 200,
     "bookId": 8
   },
   {
-    "bookName": "Vue.js实战",
-    "bookInfo": "Vue.js作者尤雨溪作推荐序",
-    "bookPrice": 200,
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
+    "bookCover": "https://images-cn.ssl-images-amazon.com/images/I/41sxR8D86bL.jpg",
+    "bookName": "代码整洁之道",
+    "bookInfo": "软件质量，不但依赖于架构及项目管理，而且与代码质量紧密相关",
+    "bookPrice": 48.00,
     "bookId": 9
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B075SWBDZ4/resources/1252389323",
+    "bookName": "Angular权威教程",
+    "bookInfo": "本书堪称Angular领域的里程碑式著作，涵盖了关于Angular的几乎所有内容。",
+    "bookPrice": 86.10,
     "bookId": 10
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/91ojtJLqQ5L.jpg",
+    "bookName": "智能时代",
+    "bookInfo": "大数据与智能革命重新定义未来(大数据、智能革命、人工智能、机械智能领域作品)",
+    "bookPrice": 50.30,
     "bookId": 11
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/716iBFxYvbL.jpg",
+    "bookName": "未来简史",
+    "bookInfo": "人类迎来第二次认知革命,人工智能和算法将战胜人类,99%的人将沦为无用阶层!",
+    "bookPrice": 46.50,
     "bookId": 12
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07MTCTPQY/resources/1943007428",
+    "bookName": "算法",
+    "bookInfo": "全面讲述算法和数据结构的必备知识",
+    "bookPrice": 21.78,
     "bookId": 13
   },
   {
-    "bookName": "Vue.js实战",
-    "bookInfo": "Vue.js作者尤雨溪作推荐序",
-    "bookPrice": 200,
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07KW277RR/resources/1276256415",
+    "bookName": "Node.js实战",
+    "bookInfo": "本书是Node.js的实战教程，涵盖了为开发产品级Node应用程序所需要的一切特性、技巧以及相关理念",
+    "bookPrice": 17.99,
     "bookId": 14
   },
   {
@@ -105,45 +105,45 @@
     "bookId": 15
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
+    "bookName": "Vue.js实战",
+    "bookInfo": "Vue.js作者尤雨溪作推荐序",
+    "bookPrice": 200,
     "bookId": 16
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn.ssl-images-amazon.com/images/I/41sxR8D86bL.jpg",
+    "bookName": "代码整洁之道",
+    "bookInfo": "软件质量，不但依赖于架构及项目管理，而且与代码质量紧密相关",
+    "bookPrice": 48.00,
     "bookId": 17
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 100,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B075SWBDZ4/resources/1252389323",
+    "bookName": "Angular权威教程",
+    "bookInfo": "本书堪称Angular领域的里程碑式著作，涵盖了关于Angular的几乎所有内容。",
+    "bookPrice": 86.10,
     "bookId": 18
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/91ojtJLqQ5L.jpg",
+    "bookName": "智能时代",
+    "bookInfo": "大数据与智能革命重新定义未来(大数据、智能革命、人工智能、机械智能领域作品)",
+    "bookPrice": 50.30,
     "bookId": 19
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://images-cn-4.ssl-images-amazon.com/images/I/716iBFxYvbL.jpg",
+    "bookName": "未来简史",
+    "bookInfo": "人类迎来第二次认知革命,人工智能和算法将战胜人类,99%的人将沦为无用阶层!",
+    "bookPrice": 46.50,
     "bookId": 20
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07MTCTPQY/resources/1943007428",
+    "bookName": "算法",
+    "bookInfo": "全面讲述算法和数据结构的必备知识",
+    "bookPrice": 21.78,
     "bookId": 21
   },
   {
@@ -154,38 +154,17 @@
     "bookId": 22
   },
   {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
-    "bookId": 23
-  },
-  {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
-    "bookId": 24
-  },
-  {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 60.3,
-    "bookId": 25
-  },
-  {
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07M99FTKL/resources/2071577002",
-    "bookName": "Vue.js快跑",
-    "bookInfo": "构建触手可及的高性能Web应用",
-    "bookPrice": 100,
-    "bookId": 26
-  },
-  {
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
     "bookName": "Vue.js实战",
     "bookInfo": "Vue.js作者尤雨溪作推荐序",
     "bookPrice": 200,
-    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07FXNLZT4/resources/605868901",
-    "bookId": 27
+    "bookId": 23
+  },
+  {
+    "bookCover": "https://s3.cn-north-1.amazonaws.com.cn/sitbweb-cn/content/B07KW277RR/resources/1276256415",
+    "bookName": "Node.js实战",
+    "bookInfo": "本书是Node.js的实战教程，涵盖了为开发产品级Node应用程序所需要的一切特性、技巧以及相关理念",
+    "bookPrice": 17.99,
+    "bookId": 24
   }
 ]

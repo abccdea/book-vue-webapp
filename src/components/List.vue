@@ -125,8 +125,13 @@ export default {
   }
 
   .content ul li img {
-    width: 130px;
+    width: 35%;
     height: 150px;
+  }
+
+  .content ul li div {
+    width: 65%;
+    margin-left: 10px;
   }
 
   .content h4 {
@@ -152,7 +157,8 @@ export default {
   }
   .more {
     margin: 10px;
-    background: #2afedd;
+    color: #fff;
+    background: #4867AA;
     height: 30px;
     line-height: 30px;
     text-align: center;

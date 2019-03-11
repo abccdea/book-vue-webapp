@@ -20,11 +20,11 @@ function write (data, callback) {
 }
 
 http.createServer((req, res) => {
-  // res.setHeader('Access-Control-Allow-Origin', '*')
-  // res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
-  // res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
-  // res.setHeader('X-Powered-By', ' 3.2.1')
-  // if (req.method === 'OPTIONS') return res.end()
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
+  res.setHeader('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+  res.setHeader('X-Powered-By', ' 3.2.1')
+  if (req.method === 'OPTIONS') return res.end()
 
   let {pathname, query} = url.parse(req.url, true)
 
