@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+    <transition name="fadeIn">
+
+    </transition>
     <keep-alive>
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <transition name="fadeIn">
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
+    </transition>
     <Tab></Tab>
   </div>
 </template>
@@ -43,5 +48,18 @@ export default {
     top: 40px;
     bottom: 50px;
     overflow: auto;
+  }
+
+  .fadeIn-enter {
+    opacity: 0;
+  }
+
+  .fadeIn-enter-active {
+    transition: all 0.3s linear;
+  }
+
+  .fadeIn-leave-active {
+    transition: all 0.3s linear;
+    opacity: 0;
   }
 </style>
