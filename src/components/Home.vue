@@ -2,50 +2,55 @@
   <div>
     <Header :back="false">首页</Header>
     <div class="content">
-      <Swiper :swiperSlides="sliders"></Swiper>
-      <div class="container">
-        <h3>热门图书</h3>
-        <ul>
-          <li v-for="hot in hotBooks">
-            <img :src="hot.bookCover">
-            <b>{{hot.bookName}}</b>
-          </li>
-        </ul>
-      </div>
+      <Loading v-if="loading"></Loading>
+      <template v-else>
+        <Swiper :swiperSlides="sliders"></Swiper>
+        <div class="container">
+          <h3>热门图书</h3>
+          <ul>
+            <li v-for="hot in hotBooks">
+              <img :src="hot.bookCover">
+              <b>{{hot.bookName}}</b>
+            </li>
+          </ul>
+        </div>
+      </template>
     </div>
   </div>
 </template>
 
 <script>
-  import Header from '../base/Header.vue'
-  import Swiper from '../base/Swiper.vue'
-  import {getSliders, getHotBook} from '../api'
+import Header from '../base/Header.vue'
+import Swiper from '../base/Swiper.vue'
+import Loading from '../base/Loading.vue'
+import {getAll} from '../api'
 
-  export default {
-    name: 'Home',
-    created () {
-      this.getSlider()
-      this.getHot()
-    },
-    data () {
-      return {
-        sliders: [],
-        hotBooks: []
-      }
-    },
-    methods: {
-      async getSlider () {
-        this.sliders = await getSliders()
-      },
-      async getHot () {
-        this.hotBooks = await getHotBook()
-      }
-    },
-    components: {
-      Header,
-      Swiper
+export default {
+  name: 'Home',
+  created () {
+    this.getData()
+  },
+  data () {
+    return {
+      sliders: [],
+      hotBooks: [],
+      loading: true
     }
+  },
+  methods: {
+    async getData () {
+      let [sliders, hotBooks] = await getAll()
+      this.sliders = sliders
+      this.hotBooks = hotBooks
+      this.loading = false
+    }
+  },
+  components: {
+    Header,
+    Swiper,
+    Loading
   }
+}
 </script>
 
 <style scoped lang="less">
