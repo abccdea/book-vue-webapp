@@ -21,3 +21,15 @@ export let getBooks = () => {
 export let removeBook = (id) => {
   return axios.delete(`/book?id=${id}`)
 }
+
+export let findOneBook = (id) => {
+  return axios.get(`/book?id=${id}`)
+}
+
+export let updateBook = (id, data) => {
+  return axios.put(`/book?id=${id}`, data)
+}
+
+export let addBook = (data) => {
+  return axios.post('/book', data)
+}

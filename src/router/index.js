@@ -27,8 +27,9 @@ export default new Router({
       component: Add
     },
     {
-      path: '/detail',
-      component: Detail
+      path: '/detail/:bid',
+      component: Detail,
+      name: 'detail'
     },
     {
       path: '*',
