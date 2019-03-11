@@ -3,6 +3,7 @@ let fs = require('fs')
 let url = require('url')
 
 let sliders = require('./sliders')
+let pageSize = 5
 
 function read (callback) {
   fs.readFile('./books.json', 'utf8', function (err, data) {
@@ -26,6 +27,20 @@ http.createServer((req, res) => {
   if (req.method === 'OPTIONS') return res.end()
 
   let {pathname, query} = url.parse(req.url, true)
+
+  if (pathname === '/page') {
+    let offset = parseInt(query.offset) || 0
+    read(function (books) {
+      let result = books.reverse().slice(offset, offset + pageSize)
+      let hasMore = true
+      if (books.length <= offset + pageSize) {
+        hasMore = false
+      }
+      res.setHeader('Content-Type', 'application/json;charset=utf8')
+      res.end(JSON.stringify({hasMore, books: result}))
+    })
+    return
+  }
 
   if (pathname === '/sliders') {
     res.setHeader('Content-Type', 'application/json;charset=utf8')
@@ -109,7 +124,5 @@ http.createServer((req, res) => {
         })
         break
     }
-
-    return
   }
 }).listen(3000)

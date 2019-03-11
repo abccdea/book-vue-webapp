@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header>列表</Header>
-    <div class="content">
+    <div class="content" ref="scroll" @scroll="loadMore">
       <ul>
         <router-link v-for="(book,index) in books" :to="{name: 'detail', params: {bid: book.bookId}}" :key="index" tag="li">
           <img :src="book.bookCover">
@@ -13,27 +13,50 @@
           </div>
         </router-link>
       </ul>
+      <div class="more" @click="more">加载更多</div>
     </div>
   </div>
 </template>
 
 <script>
 import Header from '../base/Header.vue'
-import {getBooks, removeBook} from '../api'
+import {pagination, removeBook} from '../api'
 
 export default {
   name: 'List',
   data () {
     return {
-      books: []
+      books: [],
+      offset: 0,
+      hasMore: true,
+      isLoading: false
     }
   },
   created () {
     this.getData()
   },
   methods: {
+    loadMore () {
+      clearTimeout(this.timer)
+      this.timer = setTimeout(() => {
+        let {scrollTop, clientHeight, scrollHeight} = this.$refs.scroll
+        if (scrollTop + clientHeight + 20 > scrollHeight) {
+          this.getData()
+        }
+      }, 13)
+    },
+    more () {
+      this.getData()
+    },
     async getData () {
-      this.books = await getBooks()
+      if (this.hasMore && !this.isLoading) {
+        this.isLoading = true
+        let {hasMore, books} = await pagination(this.offset)
+        this.books = [...this.books, ...books]
+        this.hasMore = hasMore
+        this.isLoading = false
+        this.offset = this.books.length
+      }
     },
     async remove (id) {
       await removeBook(id)
@@ -82,5 +105,13 @@ export default {
     border: none;
     border-radius: 15px;
     outline: none;
+  }
+  .more {
+    margin: 10px;
+    background: #2afedd;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
   }
 </style>
