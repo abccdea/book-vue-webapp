@@ -10,25 +10,38 @@ export default new Router({
       path: '/home',
       component: () => import('../components/Home.vue'),
       meta: {
-        keepAlive: true
+        keepAlive: true,
+        title: '首页'
       }
     },
     {
       path: '/list',
-      component: () => import('../components/List.vue')
+      component: () => import('../components/List.vue'),
+      meta: {
+        title: '列表'
+      }
     },
     {
-      path: '/collect',
-      component: () => import('../components/Collect.vue')
+      path: '/cart',
+      component: () => import('../components/Cart.vue'),
+      meta: {
+        title: '购物车'
+      }
     },
     {
       path: '/add',
-      component: () => import('../components/Add.vue')
+      component: () => import('../components/Add.vue'),
+      meta: {
+        title: '添加'
+      }
     },
     {
       path: '/detail/:bid',
       component: () => import('../components/Detail.vue'),
-      name: 'detail'
+      name: 'detail',
+      meta: {
+        title: '详情'
+      }
     },
     {
       path: '*',

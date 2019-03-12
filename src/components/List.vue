@@ -3,13 +3,18 @@
     <Header>列表</Header>
     <div class="content" ref="scroll" @scroll="loadMore">
       <ul>
-        <router-link v-for="(book,index) in books" :to="{name: 'detail', params: {bid: book.bookId}}" :key="index" tag="li">
+        <router-link v-for="(book,index) in books" :to="{name: 'detail', params: {bid: book.bookId}}" :key="index"
+                     tag="li">
           <img v-lazy="book.bookCover">
           <div>
             <h4>{{book.bookName}}</h4>
             <p>{{book.bookInfo}}</p>
             <b>{{book.bookPrice}}</b>
-            <button @click.stop="remove(book.bookId)">删除</button>
+            <div class="btn-list">
+              <button @click.stop="remove(book.bookId)">删除</button>
+              <button @click.stop="addCart(book)">添加购物车</button>
+            </div>
+
           </div>
         </router-link>
       </ul>
@@ -19,6 +24,7 @@
 </template>
 
 <script>
+import * as Types from '../store/actions'
 import Header from '../base/Header.vue'
 import {pagination, removeBook} from '../api'
 
@@ -36,10 +42,12 @@ export default {
     let scroll = this.$refs.scroll
     let top = scroll.offsetTop
     let distance = 0
+    let isMove = false
     scroll.addEventListener('touchstart', (e) => {
       if (scroll.scrollTop !== 0 || scroll.offsetTop !== top) return
       let start = e.touches[0].pageY
       let move = (e) => {
+        isMove = true
         let current = e.touches[0].pageY
         distance = current - start
         if (distance > 0) {
@@ -55,6 +63,8 @@ export default {
         }
       }
       let end = (e) => {
+        if (!isMove) return
+        isMove = false
         clearInterval(this.timer1)
         this.timer1 = setInterval(() => {
           if (distance <= 0) {
@@ -80,6 +90,9 @@ export default {
     this.getData()
   },
   methods: {
+    addCart (book) {
+      this.$store.commit(Types.ADD_CART, book)
+    },
     loadMore () {
       clearTimeout(this.timer)
       this.timer = setTimeout(() => {
@@ -138,23 +151,27 @@ export default {
     font-size: 20px;
     line-height: 35px;
   }
+
   .content p {
     color: #2a2a2a;
     line-height: 25px;
   }
+
   .content b {
     color: red;
   }
+
   .content button {
     display: block;
-    width: 60px;
+    width: 120px;
     height: 25px;
-    background: orange;
+    background: #4867AA;
     color: #fff;
     border: none;
     border-radius: 15px;
     outline: none;
   }
+
   .more {
     margin: 10px;
     color: #fff;
@@ -163,5 +180,11 @@ export default {
     line-height: 30px;
     text-align: center;
     font-size: 20px;
+  }
+
+  .btn-list {
+    display: flex;
+    justify-content: space-around;
+
   }
 </style>

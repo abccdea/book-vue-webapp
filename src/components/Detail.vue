@@ -83,7 +83,7 @@ export default {
     display: block;
     width: 80px;
     height: 35px;
-    background: #2aabd2;
+    background: #4867AA;
     color: #fff;
     border: none;
     border-radius: 4px;

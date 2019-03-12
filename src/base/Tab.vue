@@ -8,9 +8,9 @@
       <i class="iconfont icon-liebiao"></i>
       <span>列表</span>
     </router-link>
-    <router-link to="/collect">
+    <router-link to="/cart">
       <i class="iconfont icon-shoucang"></i>
-      <span>收藏</span>
+      <span>购物车</span>
     </router-link>
     <router-link to="/add">
       <i class="iconfont icon-icon02"></i>
